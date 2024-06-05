@@ -1,0 +1,9 @@
+matplotlib==3.7.0
+numpy==1.23.5
+numpy==1.22.4
+pandas==1.5.3
+scikit_learn==1.2.1
+seaborn==0.13.2
+sentence_transformers==2.2.2
+tqdm==4.64.0
+xgboost==1.7.4
