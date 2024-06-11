@@ -1,0 +1,528 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "sc:Dataset",
+  "name": "F-DATA",
+  "description": "F-DATA is a novel workload dataset containing the data of around 24 million jobs executed on Supercomputer Fugaku, over the three years of public system usage (March 2021-April 2024). Each job data contains an extensive set of features, such as exit code, duration, power consumption and performance metrics (e.g. #flops, memory bandwidth, operational intensity and memory/compute bound label), which allows for a multitude of job characteristics prediction.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "citeAs": "@dataset{antici_2024_11467483,author = {Antici, Francesco and Bartolini, Andrea and Domke, Jens and Kiziltan, Zeynep and Yamamoto, Keiji}, title= {{F-DATA: A Fugaku Workload Dataset for Job-centric Predictive Modelling in HPC Systems}},month        = jun,year         = 2024, publisher    = {Zenodo},version      = {1.0},doi          = {10.5281/zenodo.11467483},url          = {https://doi.org/10.5281/zenodo.11467483}}",
+  "url": "https://zenodo.org/records/11467483",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "feature_list.csv",
+      "contentUrl": "https://zenodo.org/records/11467483/files/feature_list.csv",
+      "encodingFormat": "text/csv"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_03.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_03.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_04.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_04.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_05.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_05.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_06.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_06.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_07.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_07.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_08.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_08.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_09.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_09.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_10.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_10.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_11.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_11.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "21_12.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/21_12.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_01.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_01.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_02.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_02.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_03.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_03.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_04.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_04.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_05.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_05.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_06.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_06.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_07.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_07.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_08.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_08.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_09.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_09.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_10.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_10.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_11.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_11.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "22_12.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/22_12.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_01.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_01.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_02.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_02.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_03.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_03.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_04.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_04.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_05.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_05.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_06.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_06.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_07.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_07.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_08.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_08.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_09.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_09.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_10.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_10.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_11.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_11.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "23_12.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/23_12.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "24_01.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/24_01.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "24_02.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/24_02.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "24_03.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/24_03.parquet",
+      "encodingFormat": "text/parquet"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "24_04.parquet",
+      "contentUrl": "https://zenodo.org/records/11467483/files/24_04.parquet",
+      "encodingFormat": "text/parquet"
+    }
+  ],
+  "recordSet": {
+    "@type": "cr:RecordSet",
+    "@id": "job data",
+    "key": {
+      "@id": "jid"
+    },
+    "field": [
+      {
+        "@type": "cr:Field",
+        "@id": "job data/jid",
+        "description": "The id assigned to the job when it is submitted",
+        "dataType": "sc:string"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/usr",
+        "description": "The username of the user submitting the job",
+        "dataType": "sc:string"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/jnam",
+        "description": "The name of the job",
+        "dataType": "sc:string"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/cnumr",
+        "description": "Number of cores requested for the job",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/cnumat",
+        "description": "Number of cores allocated to the job",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/cnumut",
+        "description": "Number of cores used by the job",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/nnumr",
+        "description": "Number of nodes requested for the job",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/adt",
+        "description": "Arrival datetime (submission time)",
+        "dataType": "sc:datetime"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/qdt",
+        "description": "Time of insertion in the job queue",
+        "dataType": "sc:datetime"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/schedsdt",
+        "description": "Time of completed scheduling choice",
+        "dataType": "sc:datetime"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/deldt",
+        "description": "Time of job deletion",
+        "dataType": "sc:datetime"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/ec",
+        "description": "Job exit code",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/elpl",
+        "description": "Elapsed time limit (the time limit set to the job duration)",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/sdt",
+        "description": "Start datetime",
+        "dataType": "sc:datetime"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/edt",
+        "description": "End datetime",
+        "dataType": "sc:datetime"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/nnuma",
+        "description": "Number of nodes allocated to the job",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/idle_time_ave",
+        "description": "Average idle time of the job",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/nnumu",
+        "description": "Number of nodes used by the job",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/perf1",
+        "description": "Number of execution cycles",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/perf2",
+        "description": "FP_FIXED_OPS_SPEC",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/perf3",
+        "description": "FP_SCALE_OPS_SPEC",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/perf4",
+        "description": "BUS_READ_TOTAL_MEM",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/perf5",
+        "description": "BUS_WRITE_TOTAL_MEM",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/perf6",
+        "description": "Number of sleep cycles",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/mszl",
+        "description": "Memory size limit for the job",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/pri",
+        "description": "Priority",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/econ",
+        "description": "Energy consumption",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/avgpcon",
+        "description": "Average node power consuption",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/minpcon",
+        "description": "Minimum node power consuption",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/maxpcon",
+        "description": "Maximum node power consuption",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/msza",
+        "description": "Memory size allocated",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/mmszu",
+        "description": "Memory size used",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/uctmut",
+        "description": "User cpu time total use",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/sctmut",
+        "description": "System cpu time total use",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/usctmut",
+        "description": "Total cpu time use",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/jobenv_req",
+        "description": "Job environment requested",
+        "dataType": "sc:string"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/freq_req",
+        "description": "Node frequency requested",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/freq_alloc",
+        "description": "Node frequency allocated",
+        "dataType": "sc:int"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/flops",
+        "description": "Number of floating point operations per second",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/mbwidth",
+        "description": "Memory bandwidth",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/opint",
+        "description": "Operational intensity",
+        "dataType": "sc:float"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/pclass",
+        "description": "Performance class (either compute-bound or memory-bound)",
+        "dataType": "sc:string"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/embedding",
+        "description": "Sensitive data encoding with Sentence-Bert",
+        "dataType": "sc:Array[float]"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/exit state",
+        "description": "Exit state of the job execution (either completed or failed)",
+        "dataType": "sc:string"
+      },
+      {
+        "@type": "cr:Field",
+        "@id": "job data/duration",
+        "description": "Duration of the job execution in seconds",
+        "dataType": "sc:float"
+      }
+    ]
+  }
+}
